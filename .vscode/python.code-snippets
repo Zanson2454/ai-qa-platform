@@ -1,0 +1,31 @@
+{
+  "Python 模块头（docstring）": {
+    "prefix": "pyheader",
+    "scope": "python",
+    "body": [
+      "\"\"\"",
+      "${1:一句话描述本模块职责。}",
+      "",
+      "Author: ${2:Your Name}",
+      "Created: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "Description: ${3:详细说明、依赖与注意事项。}",
+      "\"\"\"",
+      "",
+      "$0"
+    ],
+    "description": "插入模块级 docstring：作者、创建日期、描述"
+  },
+  "Python 文件头（注释行，适合脚本）": {
+    "prefix": "pyhead",
+    "scope": "python",
+    "body": [
+      "# -*- coding: utf-8 -*-",
+      "# Author: ${1:Your Name}",
+      "# Created: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "# Description: ${2:脚本说明}",
+      "",
+      "$0"
+    ],
+    "description": "插入 # 风格文件头（编码/作者/日期）"
+  }
+}
